@@ -7,8 +7,8 @@ const port = 3000;
 function fetchUser(id) {
     return {
         id,
-        name: 'Bob',
-        email: 'bob@example.com',
+        name: "Bob",
+        email: "bob@example.com",
     };
 }
 
@@ -23,7 +23,7 @@ app.get('/user', (req, res) => {
     return res.json({
         message: `Hello, ${user.name}! Your email is ${user.email}.`,
         user,
-    });
+    })
 });
 
 app.listen(port, () => {
